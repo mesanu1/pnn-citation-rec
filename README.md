@@ -27,7 +27,7 @@ and test caches. After that, every other notebook can be run
 independently.
 
 ```
-00 ─→ (any of)  01, 02, 03, 04, 1*, 2*, 30
+00 ─→ (any of)  01, 02, 03, 04, 1*, 2*
 ```
 
 Numeric prefixes encode the layout, not a strict dependency:
@@ -35,7 +35,6 @@ Numeric prefixes encode the layout, not a strict dependency:
 - `0*` — data preparation, dataset analysis, figure generation, no-graph baselines
 - `1*` — homogeneous GNN encoders (GraphSAGE, GAT, GATv2)
 - `2*` — heterogeneous GNN encoders and the R-GAT control
-- `30`  — verifies the parameter counts reported in the paper's results table
 
 ## Notebook index
 
@@ -57,7 +56,6 @@ Numeric prefixes encode the layout, not a strict dependency:
 | `22_hetgat_4L.ipynb` | HetGAT, 4 layers (multi-seed) |
 | `23_hetgat_5L.ipynb` | HetGAT, 5 layers (multi-seed) |
 | `24_rgat_3L.ipynb` | R-GAT (per-relation + unweighted-sum aggregator), 3 layers |
-| `30_parameter_counts.ipynb` | Re-instantiates each encoder and prints parameter counts |
 
 ## Multi-seed runs
 
