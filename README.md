@@ -62,11 +62,3 @@ Numeric prefixes encode the layout, not a strict dependency:
 Notebooks marked "multi-seed" in the table were run with `SEED ∈ {42, 43, 44}`
 to produce the `mean ± std` numbers. The default value in each notebook is
 seed 42; change `SEED` at the top of the config cell to reproduce the others.
-
-## Hardware notes
-
-The reported runs used a single NVIDIA RTX Pro 6000 Blackwell (96 GB
-VRAM). Per-epoch training time ranged from ~30 s (GraphSAGE) to ~65 s
-(HetGAT-5L). The full-pool evaluation step needs ~12 GB of GPU memory at
-the default `EVAL_FULLPOOL_BATCH = 16`; reduce it if you hit OOM on a
-smaller GPU.
